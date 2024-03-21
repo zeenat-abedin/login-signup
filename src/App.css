@@ -1,3 +1,13 @@
 .app{
     background-color: #f5f5f5;
 }
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36.94px;
+}

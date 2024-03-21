@@ -24,7 +24,7 @@ const Signup = ({ handleLogin }) => {
 
   return (
     <div>
-      <h2>Sign Up</h2>
+      <h2>Create Your Account</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" name="username" placeholder="Username" value={formData.username} onChange={handleChange} />
         <input
