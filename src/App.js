@@ -23,7 +23,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <Header loggedIn={loggedIn} handleLogout={handleLogout} />
         <Routes>
           {/* <Route exact path="/" component={Home} /> */}
