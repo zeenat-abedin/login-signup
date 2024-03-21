@@ -26,14 +26,14 @@ function App() {
       <div className="App">
         <Header loggedIn={loggedIn} handleLogout={handleLogout} />
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route path="/signup" render={(props) => <Signup {...props} handleLogin={handleLogin} />} />
+          {/* <Route exact path="/" component={Home} /> */}
+          <Route path="/" render={(props) => <Signup {...props} handleLogin={handleLogin} />} />
           <Route path="/login" render={(props) => <Login {...props} handleLogin={handleLogin} />} />
           <Route
             path="/protected"
             render={(props) => <ProtectedPage {...props} loggedIn={loggedIn} user={user} />}
           />
-          </Routes>
+        </Routes>
       </div>
     </Router>
   );

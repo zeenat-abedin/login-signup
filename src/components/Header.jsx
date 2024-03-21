@@ -1,31 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { IoCartOutline } from "react-icons/io5";
+import { FaMagnifyingGlass } from "react-icons/fa6";
+
+import './Header.css'
 
 const Header = ({ loggedIn, handleLogout }) => {
   return (
-    <header>
-      <nav>
+    <header className='header'>
+      <h1 className='heading'>ECOMMERCE</h1>
+      <nav className='nav'>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            Categories
           </li>
-          {!loggedIn && (
-            <>
-              <li>
-                <Link to="/signup">Sign Up</Link>
-              </li>
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
-            </>
-          )}
-          {loggedIn && (
-            <li>
-              <button onClick={handleLogout}>Logout</button>
-            </li>
-          )}
+          <li>
+             Sale
+          </li>
+          <li>
+           Clearance
+          </li>
+          <li>
+             New Stock
+          </li> 
+          <li>
+            Trending
+          </li>         
         </ul>
       </nav>
+      <div className="others">
+        <IoCartOutline />
+        <FaMagnifyingGlass />
+      </div>
     </header>
   );
 };
