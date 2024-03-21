@@ -24,9 +24,9 @@ const Signup = ({ handleLogin }) => {
 
   return (
     <div>
-      <h2>Create Your Account</h2>
       <form onSubmit={handleSubmit}>
-        <input type="text" name="username" placeholder="Username" value={formData.username} onChange={handleChange} />
+        <h2>Create Your Account</h2>
+        <input type="text" name="username" placeholder="Enter" value={formData.username} onChange={handleChange} />
         <input
           type="password"
           name="password"
@@ -34,7 +34,7 @@ const Signup = ({ handleLogin }) => {
           value={formData.password}
           onChange={handleChange}
         />
-        <button type="submit">Sign Up</button>
+        <button type="submit">Create Account</button>
       </form>
     </div>
   );

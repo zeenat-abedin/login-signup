@@ -34,8 +34,9 @@ function App() {
           <span>Get 10% off on business sign up</span>
           <MdKeyboardArrowRight />
         </div>
+        <Signup/>
         <Routes>
-          <Route exact path="/" component={Signup} />
+          {/* <Route exact path="/" component={Home} /> */}
           {/* <Route path="/" render={(props) => <Signup {...props} handleLogin={handleLogin} />} />
           <Route path="/login" render={(props) => <Login {...props} handleLogin={handleLogin} />} />
           <Route
