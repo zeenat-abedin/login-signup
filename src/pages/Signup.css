@@ -1,0 +1,29 @@
+.signup-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  background-color: #ffffff;
+  border: 2px solid #ccc; 
+  padding: 20px;
+  /* width: 300px */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 8px 14px;
+    margin-top: 15px;
+}
+
+.create-btn{
+    background-color: #000000;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 14px;
+}

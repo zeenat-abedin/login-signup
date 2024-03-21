@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import './Signup.css'
 
 const Signup = ({ handleLogin }) => {
-  const [formData, setFormData] = useState({ username: '', password: '' });
+  const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      password: ''
+    });
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -23,19 +28,32 @@ const Signup = ({ handleLogin }) => {
   };
 
   return (
-    <div>
+    <div className='signup-form'>
       <form onSubmit={handleSubmit}>
         <h2>Create Your Account</h2>
-        <input type="text" name="username" placeholder="Enter" value={formData.username} onChange={handleChange} />
-        <input
+        <div className='container'>
+          <label htmlFor="username">Name</label>
+          <input type="text" name="username" placeholder="Enter" value={formData.username} onChange={handleChange} />
+        </div>
+        <div className='container'>
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
+        </div>
+        <div className='container'>        
+          <label htmlFor="password">Password</label>
+          <input
           type="password"
           name="password"
-          placeholder="Password"
+          placeholder="Enter"
           value={formData.password}
           onChange={handleChange}
-        />
-        <button type="submit">Create Account</button>
+          />
+        </div>
+        <button type="submit" className='create-btn'>Create Account</button>
       </form>
+      <div style={{ marginTop: '10px' }}>
+         <p>Have an Account? <Link to="/login">Login</Link></p>
+      </div>
     </div>
   );
 };
