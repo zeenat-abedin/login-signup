@@ -1,6 +1,7 @@
 .header{
     display: flex;
     justify-content: space-between;
+    margin: 10px
 }
 
 .heading{
@@ -13,7 +14,6 @@
 
 .nav{
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     gap: 16px;
 }
@@ -33,5 +33,7 @@ ul li{
 }
 
 .others{
-
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
 }
