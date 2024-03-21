@@ -49,7 +49,9 @@ const Signup = ({ handleLogin }) => {
           onChange={handleChange}
           />
         </div>
-        <button type="submit" className='create-btn'>Create Account</button>
+        <div>
+        <button type="submit" className='create-btn' >Create Account</button>
+        </div>
       </form>
       <div style={{ marginTop: '10px' }}>
          <p>Have an Account? <Link to="/login">Login</Link></p>
